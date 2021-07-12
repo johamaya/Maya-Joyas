@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+a, a:hover, a:visited, a:active {
+  color: inherit;
+  text-decoration: none;
+ }
+
+header {
+  display: grid;
+  grid-template-columns: 30vw 30vw 40vw;
+  grid-template-areas: "Contacto1 LogoJM MenuUsuario";
+  background-color: #ede0d4;
+  align-items: center;
+  justify-items: center;  
+}
+
+#Contacto1 {
+  grid-area: Contacto1;
+  font-size: x-small;
+  align-self: center;
+  margin-right: 20vw;
+}
+
+.Contacto1 {
+  color: rgb(48, 48, 48);
+}
+
+#LogoJM {
+  height: 10vh;
+  grid-area: LogoJM;
+  margin: 1vh 0;
+  justify-self: left;
+}
+
+#Menu-Usuario {
+  grid-area: MenuUsuario;
+  align-self: center;
+  font-size: x-small;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr;
+  grid-template-areas: "iconoBuscar Buscar iconoCuenta Cuenta iconoCesta Cesta";
+  background-color: #ede0d4;
+}
+
+.menu-usu {
+  margin-left: 20%;
+  margin-right: 30%;
+  color: rgb(48, 48, 48);
+}
+
+.icon-sup {
+  height: 2vh;
+  justify-self: center;
+}
+
+#iconoBuscar {
+  grid-area: iconoBuscar;
+}
+
+#Buscar {
+  grid-area: Buscar;
+  color: rgb(48, 48, 48);
+}
+
+#iconoCuenta {
+  grid-area: iconoCuenta;
+}
+
+#Cuenta {
+  grid-area: Cuenta;
+  color: rgb(48, 48, 48);
+}
+
+#iconoCesta {
+  grid-area: iconoCesta;
+}
+
+#Cesta {
+  grid-area: Cesta;
+  color: rgb(48, 48, 48);
+}
+
+nav {
+  font-size: smaller;
+}
+
+nav ul {
+  background-color: #f2e9e4;
+}
+
+ul.navegacion {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+li {
+  display: grid;
+  justify-items: center;
+  padding: 10px 5px;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #9e9996;
+}
+
+ul.sub-navegacion {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+ul.sub-navegacion:hover {
+  display: grid;
+}
+
+li:hover > ul.sub-navegacion {
+  display: grid;
+}
+
+li {
+  position: relative;
+}
+
+.sub-navegacion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+#Anillos {
+  background-color: #9e9996;
+}
+
+.encabezado {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+main {
+  display: flex;
+  height: 150vh;
+  justify-content: center;
+}
+
+.imagen-pieza {
+  width: 100%;
+}
+
+.tarjeta-pieza {
+  display: inline-block;
+  border: rgb(105, 105, 105) 2px;
+  border-style: solid;
+  width: 200px;
+  height: 250px;
+  border-radius: 3px;
+  margin: 3%;
+  padding: 20px;
+}
+
+.tarjeta-pieza:hover {
+  width: 220px;
+}
+
+.nombre-pieza {
+  font-size: small;
+  color: rgb(44, 44, 44);
+}
+
+.precio-pieza {
+  font-size: xx-small;
+  color: rgb(44, 44, 44);
+}
+
+.materiales-pieza {
+  font-size: xx-small;
+  color: rgb(44, 44, 44);
+}
+
+footer {
+  background-color: rgb(99, 96, 87);
+  grid-area: pie;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "Pie1 Pie2";
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.divs-pie {
+  margin: 4%;
+  font-size: x-small;
+  align-items: center;
+  align-content: center;
+}
+
+.titulos-pie {
+  font-size: small;
+  color: white;
+  margin-bottom: 5%;
+}
+
+.logos-pie {
+  width: 100%;
+  height: 100%;
+}
+
+.links-pie {
+  margin-left: 5%;
+  color: white;
+}
+
+#Pie1 {
+  display: grid;
+  grid-template-columns: 0.5fr 9.5fr;
+  grid-template-areas:
+    "Redes Redes"
+    "IG Instagram"
+    "FB Facebook";
+  grid-area: Pie1;
+}
+
+#Redes {
+  grid-area: Redes;
+}
+
+#logo-IG {
+  grid-area: IG;
+}
+
+#Instagram {
+  grid-area: Instagram;
+}
+
+#logo-FB {
+  grid-area: FB;
+}
+
+#Facebook {
+  grid-area: Facebook;
+}
+
+#Pie2 {
+  display: grid;
+  grid-template-columns: 0.5fr 9.5fr;
+  grid-template-areas:
+    "Contacto2 Contacto2"
+    "WPP Whatsapp"
+    "CO Correo";
+  grid-area: Pie2;
+}
+
+#Contacto2 {
+  grid-area: Contacto2;
+}
+
+#WPP {
+  grid-area: WPP;
+}
+
+#Whatsapp {
+  grid-area: Whatsapp;
+}
+
+#CO {
+  grid-area: CO;
+}
+
+#Correo {
+  grid-area: Correo;
+}
+
+
+
+@media (max-width: 800px) {
+
+  header {
+    display: grid;
+    grid-template-columns: 20vw 40vw 40vw;
+  }
+
+  #Contacto1 {
+    font-size: 0.5rem;
+    align-self: center;
+    margin-right: 0;
+  }
+
+  #LogoJM {
+    height: 3.5vh;
+    justify-self: center;
+  }
+
+  #Menu-Usuario {
+    margin-left: 5%;
+    align-items: center;
+  }
+  
+  img.icon-sup {
+    height: 0.5rem;
+    justify-self: right;
+    align-self: center;
+  }
+
+  .menu-usu {    
+    font-size: 0.5rem;
+    align-self: center;
+  }
+
+  nav {
+    font-size: xx-small;
+    height: 2vh;
+  }
+
+  .sub-navegacion {
+    font-size: 0.45rem;
+  }
+
+  .tarjeta-pieza {
+    width: 120px;
+    height: 160px;
+    padding: 10px;
+    margin-top: 10%;
+  }
+
+  .tarjeta-pieza:hover {
+    width: 130px;
+  }
+
+  .nombre-pieza {
+    font-size: x-small;
+  }
+}
